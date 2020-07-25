@@ -3,7 +3,6 @@
     "ms-ceintl.vscode-language-pack-zh-hans",
     "visualstudioexptteam.vscodeintellicode",
     "dbaeumer.vscode-eslint",
-    "esbenp.prettier-vscode",
-    "octref.vetur"
+    "esbenp.prettier-vscode"
   ]
 }

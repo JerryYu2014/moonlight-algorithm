@@ -1,0 +1,30 @@
+{
+    "workbench.sideBar.location": "right",
+    "workbench.startupEditor": "newUntitledFile",
+    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
+    "git.ignoreLimitWarning": true,
+    "git.autofetch": true,
+    "git.enableSmartCommit": true,
+    "search.exclude": {
+        "**/node_modules": true,
+        "**/dist": true,
+        "**/out": true
+    },
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/node_modules": true,
+        "**/build": true,
+        "**/dist": true,
+        "**/out": true
+    },
+    // vscode默认启用了根据文件类型自动设置tabsize的选项
+    "editor.detectIndentation": false,
+    // #每次保存的时候自动格式化
+    "editor.formatOnSave": true,
+    // 重新设定tabsize
+    "editor.tabSize": 4,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    }
+}

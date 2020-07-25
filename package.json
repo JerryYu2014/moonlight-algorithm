@@ -4,7 +4,8 @@
   "description": "moonlight-algorithm is a algorithm library",
   "main": "./src/index.js",
   "scripts": {
-    "test": "node ./test/test.js"
+    "build": "tsc ./lib/index.ts",
+    "test": "mocha --reporter spec"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,10 @@
   "bugs": {
     "url": "https://github.com/JerryYu2014/moonlight-algorithm/issues"
   },
-  "homepage": "https://github.com/JerryYu2014/moonlight-algorithm#readme"
+  "homepage": "https://github.com/JerryYu2014/moonlight-algorithm#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.0.1",
+    "typescript": "^3.9.7"
+  }
 }

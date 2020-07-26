@@ -1,1 +1,6 @@
 lib/
+.vscode/
+
+note.md
+cmd.bat
+tsconfig.json

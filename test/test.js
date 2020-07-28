@@ -25,3 +25,17 @@ describe('moonlight-algorithm function quickSort2 test', () => {
     expect(result.toString()).to.equal([1, 1, 2, 3, 6, 7, 8].toString());
   });
 });
+
+describe('moonlight-algorithm function _2DArraySearch test', () => {
+  it('should return true', () => {
+    const result = algorithm._2DArraySearch(4, [[1, 2, 3], [4, 5, 6], [7, 8, 9]]);
+    expect(result).to.equal(true);
+  });
+});
+
+describe('moonlight-algorithm function binarySearch test', () => {
+  it('should return 2', () => {
+    const result = algorithm.binarySearch(5, [1, 3, 5, 7, 8, 9], 0, 5);
+    expect(result).to.equal(2);
+  });
+});

@@ -2,7 +2,7 @@
   "name": "moonlight-algorithm",
   "version": "1.0.0",
   "description": "moonlight-algorithm is a algorithm library",
-  "main": "./src/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
     "test": "mocha --reporter spec",

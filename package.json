@@ -5,6 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
+    "wpbuild": "webpack",
     "test": "npm run build && mocha --reporter spec",
     "cover": "istanbul cover node_modules/mocha/bin/_mocha test/*.js - - -R spec"
   },
@@ -27,7 +28,10 @@
     "coveralls": "^3.1.0",
     "istanbul": "^0.4.5",
     "mocha": "^8.0.1",
-    "typescript": "^3.9.7"
+    "ts-loader": "^8.0.1",
+    "typescript": "^3.9.7",
+    "webpack": "^4.44.0",
+    "webpack-cli": "^3.3.12"
   },
   "dependencies": {
     "@types/node": "^14.0.27",

@@ -1,4 +1,4 @@
-export function Compile(el, vm) {
+function Compile(el, vm) {
   this.vm = vm;
   this.el = document.querySelector(el);
   this.fragment = null;

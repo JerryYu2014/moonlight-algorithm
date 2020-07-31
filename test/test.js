@@ -39,3 +39,20 @@ describe('moonlight-algorithm function binarySearch test', () => {
     expect(result).to.equal(2);
   });
 });
+
+describe('moonlight-algorithm function observe test', () => {
+  it('should return No Book', () => {
+    const library = {
+      book1: {
+        name: ''
+      },
+      book2: ''
+    };
+    algorithm.observe(library);
+    library.book1.name = 'Nice Book';
+    library.book2 = 'No Book';
+
+    // const result = algorithm.observe({});
+    expect(library.book2).to.equal('No Book');
+  });
+});

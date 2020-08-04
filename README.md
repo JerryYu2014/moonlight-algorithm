@@ -6,5 +6,5 @@ moonlight-algorithm is a algorithm library
 ### Install
 
 ```
-npm install moonlight-algorithm --registry=https://registry.npmjs.org/
+npm i moonlight-algorithm --registry=https://registry.npmjs.org/
 ```

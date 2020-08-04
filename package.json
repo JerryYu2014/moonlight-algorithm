@@ -1,13 +1,14 @@
 {
   "name": "moonlight-algorithm",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "moonlight-algorithm is a algorithm library",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
     "wpbuild": "webpack",
     "test": "npm run build && mocha --reporter spec",
-    "cover": "istanbul cover node_modules/mocha/bin/_mocha test/*.js - - -R spec"
+    "cover": "istanbul cover node_modules/mocha/bin/_mocha test/*.js - - -R spec",
+    "package": "cross-env NODE_ENV=production webpack --progress --hide-modules --config webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -26,6 +27,7 @@
   "devDependencies": {
     "chai": "^4.2.0",
     "coveralls": "^3.1.0",
+    "cross-env": "^7.0.2",
     "istanbul": "^0.4.5",
     "mocha": "^8.0.1",
     "ts-loader": "^8.0.1",

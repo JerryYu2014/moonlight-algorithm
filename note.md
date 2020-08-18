@@ -16,3 +16,8 @@
 
 ## 搭建前端开发脚手架
 
+- [使用 webpack 配合 babel 搭建一个 ES6+ 转 ES5 Javascript 开发环境](https://www.jianshu.com/p/ba381d0c6e6d)
+
+## 双向绑定
+
+- [vue的双向绑定原理及实现](https://www.cnblogs.com/libin-1/p/6893712.html)

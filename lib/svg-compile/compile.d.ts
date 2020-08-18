@@ -1,0 +1,1 @@
+export declare function svgCompile(code: any): any;

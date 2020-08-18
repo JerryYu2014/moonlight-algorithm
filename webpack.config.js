@@ -7,16 +7,11 @@ module.exports = {
 
   entry: ["@babel/polyfill", "./src/app.ts"],
   devServer: {
-    contentBase: path.join(__dirname, "dist"),
-    // hot:true,    //默认值为 true，所以可以不用设置
+    contentBase: path.join(__dirname, "dev-dist"),
     port: 9000,
-    // watchOptions: {
-    //  poll: 1000
-    // }
   },
-  // entry: './lib/index.ts',
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'dev-dist'),
     filename: 'index.js'
   },
   module: {
@@ -46,34 +41,3 @@ module.exports = {
       filename: 'index.html'
     })]
 };
-
-// const path = require("path");
-// const webpack = require("webpack");
-
-// module.exports = {
-//     entry: ["@babel/polyfill", "./index.js"],
-//     devServer: {
-//         contentBase: path.join(__dirname, "dist"), 
-//         // hot:true,    //默认值为 true，所以可以不用设置
-//         port: 9000,
-//         // watchOptions: {
-//         //  poll: 1000
-//         // }
-//     },
-//     output: {
-//         filename: "bundle.js",
-//         path: path.resolve(__dirname, "dist")
-//     },
-//     module: {
-//         rules: [
-//             {
-//                 test: /\.js$/,
-//                 exclude: __dirname + "node_modules",
-//                 use: {
-//                     loader: "babel-loader"
-//                 }
-//             }
-//         ]
-//     },
-//     plugins: [new webpack.HotModuleReplacementPlugin()]
-// };

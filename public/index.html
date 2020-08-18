@@ -13,19 +13,26 @@
   <title>moonlight-algorithm</title>
 
   <style>
-    #app {
+    body {
       text-align: center;
     }
+
+    /* #app {
+      text-align: center;
+    } */
   </style>
 </head>
 
 <body>
-  <div id="app">
+  <div id="my-vue">
     <h2>{{title}}</h2>
     <input v-model="name">
     <h1>{{name}}</h1>
     <button v-on:click="clickMe">click me!</button>
   </div>
+
+  <div id="svg-compile"></div>
+
   <!-- built files will be auto injected -->
 </body>
 

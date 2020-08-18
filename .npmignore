@@ -1,5 +1,6 @@
 lib/
 .vscode/
+dev-dist/
 
 note.md
 cmd.bat

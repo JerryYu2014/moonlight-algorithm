@@ -13,6 +13,13 @@ npm i typescript -D
 
 .\node_modules\.bin\tsc --init
 
+npm i -D webpack-dev-server
+
+npm i -D html-webpack-plugin
+
+npm i -D  @babel/core @babel/preset-env babel-loader
+npm i -s @babel/polyfill
+
 REM Test
 npm i mocha -D
 npm i chai -D

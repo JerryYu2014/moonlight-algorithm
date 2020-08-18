@@ -1,3 +1,26 @@
+const path = require('path');
+
+module.exports = {
+  mode: 'production',
+
+  entry: './lib/index.ts',
+  output: {
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'index.js'
+  },
+  module: {
+    rules: [{
+      test: /\.ts$/,
+      use: "ts-loader"
+    }]
+  },
+  resolve: {
+    extensions: [
+      '.ts', '.js'
+    ]
+  },
+};
+
 // var path = require('path')
 // var webpack = require('webpack')
 // const ExtractTextPlugin = require('extract-text-webpack-plugin')

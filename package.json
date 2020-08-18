@@ -4,8 +4,9 @@
   "description": "moonlight-algorithm is a algorithm library",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc",
-    "wpbuild": "webpack",
+    "start": "npm run build:dev && webpack-dev-server --open",
+    "build:npm": "tsc",
+    "build:dev": "webpack",
     "test": "npm run build && mocha --reporter spec",
     "cover": "istanbul cover node_modules/mocha/bin/_mocha test/*.js - - -R spec",
     "package": "cross-env NODE_ENV=production webpack --progress --hide-modules --config webpack.config.js"
@@ -25,17 +26,23 @@
   },
   "homepage": "https://github.com/JerryYu2014/moonlight-algorithm#readme",
   "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "babel-loader": "^8.1.0",
     "chai": "^4.2.0",
     "coveralls": "^3.1.0",
     "cross-env": "^7.0.2",
+    "html-webpack-plugin": "^4.3.0",
     "istanbul": "^0.4.5",
     "mocha": "^8.0.1",
     "ts-loader": "^8.0.1",
     "typescript": "^3.9.7",
     "webpack": "^4.44.0",
-    "webpack-cli": "^3.3.12"
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
+    "@babel/polyfill": "^7.10.4",
     "@types/node": "^14.0.27",
     "list-diff2": "^0.1.4"
   }

@@ -6,6 +6,7 @@
   "scripts": {
     "build:dev": "webpack --inline --progress --hide-modules",
     "start": "webpack-dev-server --inline --progress --hide-modules --open",
+    "build:tsc": "tsc",
     "build:npm": "webpack --progress --hide-modules --config webpack.npm.config.js",
     "package": "cross-env NODE_ENV=production webpack --progress --hide-modules --config webpack.npm.config.js",
     "test": "npm run build:npm && mocha --reporter spec",

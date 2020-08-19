@@ -1,6 +1,6 @@
 {
   "name": "moonlight-algorithm",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "moonlight-algorithm is a algorithm library",
   "main": "dist/index.js",
   "scripts": {

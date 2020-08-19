@@ -7,7 +7,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'index.js',
-    // library: 'moonlight-algorithm',
+    library: 'moonlight-algorithm',
     libraryTarget: 'umd',
     umdNamedDefine: true
   },

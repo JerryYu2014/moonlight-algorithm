@@ -8,7 +8,8 @@ module.exports = {
   // target: 'node',
   // target: 'web', // <=== 默认是 'web'，可省略
 
-  entry: './lib/index.ts',
+  entry: ['@babel/polyfill', './lib/index.ts'],
+  // entry: './lib/index.ts',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'index.js',

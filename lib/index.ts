@@ -4,4 +4,4 @@ export * from './search';
 
 export * from './my-vue'
 export * from './svg-compile'
-export * from './vdom'
+export { el, diff, patch } from './vdom'

@@ -21,3 +21,9 @@
 ## 双向绑定
 
 - [vue的双向绑定原理及实现](https://www.cnblogs.com/libin-1/p/6893712.html)
+
+## webpack 配置
+
+- [详解webpack的out.libraryTarget属性](https://blog.csdn.net/frank_yll/article/details/78992778)
+- [libraryTarget的几种选择我们来好好分析](https://zhuanlan.zhihu.com/p/108216236)
+  

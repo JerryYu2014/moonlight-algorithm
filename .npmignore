@@ -7,4 +7,4 @@ note.md
 cmd.bat
 tsconfig.json
 webpack.config.js
-webpack.npm.config.js
+webpack.lib.config.js

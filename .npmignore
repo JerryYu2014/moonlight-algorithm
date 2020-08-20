@@ -6,3 +6,5 @@ tsc-dist/
 note.md
 cmd.bat
 tsconfig.json
+webpack.config.js
+webpack.npm.config.js

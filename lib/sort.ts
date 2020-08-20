@@ -74,3 +74,18 @@ export function quickSort2(array: Array<Number>, start: any, end: any): Array<Nu
   quickSort2(array, l + 1, end);
   return array;
 }
+
+export function insertSort(array: any) {
+  for (let i = 1; i < array.length; i++) {
+    let target = i;
+    for (let j = i - 1; j >= 0; j--) {
+      if (array[target] < array[j]) {
+        [array[target], array[j]] = [array[j], array[target]]
+        target = j;
+      } else {
+        break;
+      }
+    }
+  }
+  return array;
+}

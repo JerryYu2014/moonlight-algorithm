@@ -7,8 +7,8 @@
     "build:dev": "webpack --inline --progress --hide-modules",
     "start": "webpack-dev-server --inline --progress --hide-modules --open",
     "build:tsc": "tsc",
-    "build:lib": "webpack --progress --hide-modules --config webpack.npm.config.js",
-    "package": "cross-env NODE_ENV=production webpack --progress --hide-modules --config webpack.npm.config.js",
+    "build:lib": "webpack --progress --hide-modules --config webpack.lib.config.js",
+    "package": "cross-env NODE_ENV=production webpack --progress --hide-modules --config webpack.lib.config.js",
     "test": "npm run build:lib && mocha --reporter spec",
     "cover": "istanbul cover node_modules/mocha/bin/_mocha test/*.js - - -R spec",
     "publish:pkg": "npm run package && npm publish --registry=https://registry.npmjs.org/"
